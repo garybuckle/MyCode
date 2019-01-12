@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Technology-BBC News</title>
+    <style type="text/css">
+    #topbar {
+            width: 1000px;
+            margin: 0 auto;
+            height: 40px;
+
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        #logo {
+            margin-top: 8px;
+            width: 100px;
+            float: left;
+            margin-right: 8px;
+        }
+
+        #signin-div {}
+
+        .topbar-section {
+            float: left;
+            border-left: 1px #cccccc solid;
+            height: 100%;
+        }
+
+        #signin-image {
+            float: left;
+            width: 30px;
+            margin: 10px 15px;
+        }
+
+        #signin-text {
+            font-weight: bold;
+            font-size: 90%;
+            position: relative;
+            top: 13px;
+            padding-right: 30px;
+        }
+
+
+
+        .topbar-menu {
+            font-weight: bold;
+            font-size: 90%;
+            padding: 13px 15px 0px 8px;
+            height: 27px;
+        }
+
+        #down-arrow {
+          width: 14px;
+          margin-left: 16px;
+        }
+
+        #search-box{
+          float: left;
+          background-color: #E4E4E4;
+          border: none;
+          /* margin-left: 10px; */
+          font-weight: bold;
+          font-size: 12px;
+          padding: 5px 0px 5px 5px;
+          margin: 8px 0px 0px 5px;
+        }
+
+        #magnifying-glass {
+          height: 24px;
+          margin: 8px 0px 0px 0px;
+        }
+
+        .clear{
+          clear: both;
+        }
+
+        #menu-bar-container {
+          position: relative;
+          bottom: 27px;
+          background-color: #BB1919;
+          width: 100%;
+          height: 70px:
+          border-top: 1px solid #CCCCCC;
+        }
+
+        #menu-bar {
+          width: 1000px;
+          margin: 0 auto;
+        }
+        h1{
+          /* float: left; */
+          padding 0;
+          margin 0;
+          color: white;
+          font-size: 40px;
+          font-weight: normal;
+        }
+
+
+        #menu-bar-2-container {
+          position:relative;
+          bottom: 54px;
+          background-color:#A91617;
+          width:100%:
+        }
+
+
+        #menu-bar-2 {
+          width: 1000px;
+          margin:0 auto;
+          height:30px;
+        }
+
+        #menu-bar-2 a {
+          color: white;
+          text-decoration: none;
+          margin-top: 5px;
+          height: 30px;
+          padding: 0 5px;
+          border-right: 1px solid #BB4545;
+        }
+
+        #menu-bar-2 a:hover {
+          text-decoration: underline;
+        }
+        #red-down-arrow{
+          width: 15px;
+               }
+
+        #main-article {
+          position: relative;
+          top: -50px;
+        }
+
+        #page-container {
+            position: relative;
+            left: 180px;
+            width: 1000px;
+            margin: auto 0;
+
+        }
+
+        h2 {
+           font-weight: normal;
+           margin-top: 20px;
+           font-size: 20px;
+           border-bottom: 2px solid #BB1919;
+           width: 100px;
+        }
+
+        h3 a {
+            color: black;
+            text-decoration: none;
+            font-size: 30px;
+        }
+
+        h3 a:hover {
+            color: #1167a8;
+        }
+
+
+
+        #article-summary {
+            float: left;
+            color: #5a5a5a;
+            width: 260px;
+        }
+
+        #timer-icon {
+            position: relative;
+            height: 25px;
+            top: 5px;
+        }
+
+        #topic-link{
+            color: #A91617;
+            text-decoration: none;
+            border-left: 1px solid #CCCCCC;
+            padding-left: 10px;
+        }
+
+        #article-summary a:hover {
+            color: #1167a8;
+
+        }
+
+        #article-container {
+            float: left;
+            width: 670px;
+            border-right: 1px solid #cccccc;
+    /*          padding: 20px; */
+        }
+
+        #main-article-image {
+            width: 380px;
+            margin-left: 10px;
+        }
+
+
+
+        .date {
+            padding-right:10px;
+        }
+
+        #article-hr {
+            border-top: 1px solid #a91717;
+            width: 50px;
+        }
+        .article-link {
+            color: black;
+            text-decoration: none;
+            position: relative;
+            bottom: 3px;
+            right: 10px;
+
+        }
+
+        #video-img {
+            position: relative;
+            right: 15px;
+            float: left;
+
+        }
+
+        #video-img2 {
+            float: left;
+            position: relative;
+            top: -5px;
+            right: 15px;
+        }
+
+        #watch-listen {
+	        position: relative;
+	        top: -50px;
+            width: 290px;
+            margin-left: 20px;
+            float: right;
+
+        }
+
+        .watch-listen-link {
+
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .watch-listen-link:hover {
+            color: #1167a8;
+        }
+
+
+
+
+        h4 {
+            font: normal;
+            font-size: 20px;
+        }
+
+        .article-side-image {
+            float: left;
+            width: 90px;
+            margin-right: 10px;
+        }
+
+        .clock {
+            position: relative;
+            height: 25px;
+            top: 5px;
+        }
+
+        .side-article {
+			float: right;
+			width: 180px;
+        }
+
+        .side-article p {
+	         position: relative;
+	        top: -15px;
+	        right: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="topbar">
+        <img id="logo" src="images/blq-blocks_grey_alpha.png" alt="">
+
+        <div id="signin-div" class="topbar-section">
+            <img id="signin-image" src="images/signin.png" alt=""> <span id="signin-text">Sign in</span>
+        </div>
+
+        <div class="topbar-section topbar-menu">
+            News
+        </div>
+
+        <div class="topbar-section topbar-menu">
+            Sport
+        </div>
+
+        <div class="topbar-section topbar-menu">
+            Weather
+        </div>
+
+        <div class="topbar-section topbar-menu">
+            Shop
+        </div>
+
+        <div class="topbar-section topbar-menu">
+            Reel
+        </div>
+
+        <div class="topbar-section topbar-menu">
+            Travel
+        </div>
+
+        <div class="topbar-section topbar-menu">
+            Reel
+        </div>
+
+        <div class="topbar-section topbar-menu">More <img id="down-arrow" src="images/down-arrow.png" alt="down arrow"></div>
+
+        <div class="topbar-section">
+            <input id="search-box" type="text" value="Search"> <input type="image" id="magnifying-glass" src="images/magnifying-glass.png" alt="">
+        </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <div id="menu-bar-container">
+        <div id="menu-bar">
+            <h1>NEWS</h1>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+
+    <div id="menu-bar-2-container">
+        <div id="menu-bar-2"><a href="#">Home</a> <a href="#">Video</a> <a href="#">World</a> <a href="#">US & Canada</a> <a href="#">UK</a> <a href="#">Business</a> <a href="#">Tech</a> <a href="#">Science</a> <a href="#">Stories</a> <a href="#">Entertainmemnt & Arts</a> <a href="#">Health</a> <a href="#">More</a> <img id="red-down-arrow" src="images/red-down-arrow.png" alt="down arrow"></div>
+    </div>
+
+    <div id="clear"></div>
+
+    <div id="page-container">
+        <div id="main-article">
+            <h2>Technology</h2>
+
+            <div id="article-container">
+            <h3><a href="#">The hot new tech at the CES 2019 expo</a></h3>
+
+            <div id="article-summary">
+                <p>Emotional robots, beer pods, flexible phones and 8K TVs are all part of our CES tech show preview.</p>
+
+                <p><img id="timer-icon" src="images/clock.png"> <span class="date">8 January 2019</span> <a id="topic-link" href="#">Technology</a></p>
+                <hr id="article-hr" align="left">
+                <img id="video-img" src="images/video-image.png">
+
+                <p><a class="article-link" href="#">Electric sun cream: How well does it work?</a></p><img id="video-img2" src="images/video-image.png">
+
+                <p><a class="article-link" href="#">Hands-on with the first bendy phone</a></p>
+            </div><img id="main-article-image" src="images/ces-image.png"></div>
+        </div>
+
+<!--         <div class="clear"></div> -->
+
+        <div id="watch-listen">
+            <h4>Watch/Listen</h4>
+            <img class="article-side-image" src="images/bendy-phone.png">
+
+            <div class="side-article">
+                <a class="watch-listen-link" href="#">Hands on with the worlds first bendy phone</a>
+
+                <p><img class="clock" src="images/clock.png"> <span class="date">8 January 2019</span> <a id="topic-link" href="#">Technology</a>
+                </p>
+
+					<div class="clear"></div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
