@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Js 1</title>
+</head>
+<body>
+    <p id="text">Yo Gazza!</p>
+    <p id= "p2">Javascript is .....</p>
+    <p id = "hidden"></p>
+
+    <button id="changeText">Change the text!</button>
+    <button id="changep2">Change P2</button>
+    <button id="showHidden">Show Hidden text</button>
+    <script type="text/javascript">
+
+    document.getElementById("changeText").onclick = function () {
+        document.getElementById("text").innerHTML = "Who you calling Gazza?";
+    }
+
+    document.getElementById("changep2").onclick = function () {
+        document.getElementById("p2").innerHTML = document.getElementById("p2").innerHTML + "very good!!!";
+    }
+
+    document.getElementById("showHidden").onclick = function () {
+        document.getElementById("hidden").innerHTML = hiddenText;;
+    }
+
+
+
+    hiddenText = "Normally hidden but now visible!";
+
+
+        </script>
+</body>
+</html>
