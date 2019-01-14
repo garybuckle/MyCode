@@ -9,7 +9,7 @@
     #topbar {
             width: 1000px;
             margin: 0 auto;
-            height: 40px;
+            height: 70px;
 
         }
 
@@ -87,7 +87,7 @@
           bottom: 27px;
           background-color: #BB1919;
           width: 100%;
-          height: 70px:
+          height: 70px;
           border-top: 1px solid #CCCCCC;
         }
 
@@ -97,8 +97,8 @@
         }
         h1{
           /* float: left; */
-          padding 0;
-          margin 0;
+          padding: 0;
+          margin: 0;
           color: white;
           font-size: 40px;
           font-weight: normal;
@@ -109,7 +109,7 @@
           position:relative;
           bottom: 54px;
           background-color:#A91617;
-          width:100%:
+          width:100%;
         }
 
 
@@ -180,7 +180,7 @@
             top: 5px;
         }
 
-        #topic-link{
+        .topic-link{
             color: #A91617;
             text-decoration: none;
             border-left: 1px solid #CCCCCC;
@@ -268,7 +268,7 @@
 
         .article-side-image {
             float: left;
-            width: 90px;
+            width: 100px;
             margin-right: 10px;
         }
 
@@ -287,6 +287,15 @@
 	         position: relative;
 	        top: -15px;
 	        right: 5px;
+        }
+
+        .no-border {
+          border-left: none;
+          padding: none;
+        }
+
+        .border-right {
+          border-right: 1px solid #cccccc;
         }
 
     </style>
@@ -361,7 +370,7 @@
             <div id="article-summary">
                 <p>Emotional robots, beer pods, flexible phones and 8K TVs are all part of our CES tech show preview.</p>
 
-                <p><img id="timer-icon" src="images/clock.png"> <span class="date">8 January 2019</span> <a id="topic-link" href="#">Technology</a></p>
+                <p><img id="timer-icon" src="images/clock.png"> <span class="date">8 January 2019</span> <a class="topic-link" href="#">Technology</a></p>
                 <hr id="article-hr" align="left">
                 <img id="video-img" src="images/video-image.png">
 
@@ -371,7 +380,7 @@
             </div><img id="main-article-image" src="images/ces-image.png"></div>
         </div>
 
-<!--         <div class="clear"></div> -->
+
 
         <div id="watch-listen">
             <h4>Watch/Listen</h4>
@@ -380,32 +389,41 @@
             <div class="side-article">
                 <a class="watch-listen-link" href="#">Hands on with the worlds first bendy phone</a>
 
-                <p><img class="clock" src="images/clock.png"> <span class="date">8 January 2019</span> <a id="topic-link" href="#">Technology</a>
+                <p><img class="clock" src="images/clock.png"> <span class="date">8 January 2019</span> <a class="topic-link" href="#">Technology</a>
                 </p>
             </div>
-            
-                    <div class="clear"></div>
- <img class="article-side-image" src="images/electric-suncream.png">
+            <div class="clear"></div>
 
+            <img class="article-side-image" src="images/electric-suncream.png">
             <div class="side-article">
-                <a class="watch-listen-link" href="#">Electric sun cream: How well does it work?</a>
+              <a class="watch-listen-link" href="#">Electric sun cream: How well does it work?</a>
 
-                <p><img class="clock" src="images/clock.png"> <span class="date">8 January 2019</span> <a id="topic-link" href="#">Technology</a>
-                </p>
+              <p><img class="clock" src="images/clock.png"> <span class="date">8 January 2019</span> <a class="topic-link" href="#">Technology</a>
+              </p>
             </div>
-            
-                                <div class="clear"></div>
-                                 <img class="article-side-image" src="images/odd-inventions.png">
 
+            <div class="clear"></div>
 
- <div class="side-article">
-                <a class="watch-listen-link" href="#">Full article Five odd inventions at the CES tech show</a>
+            <img class="article-side-image" src="./images/be-what=you-see.png">
+            <div class="side-article">
+              <a class="watch-listen-link" href="#">'You can't be what you can't see'</a>
 
-                <p><img class="clock" src="images/clock.png"> <span class="date">8 January 2019</span> <a id="topic-link" href="#">Technology</a>
-                </p>
+              <p><img class="clock" src="images/clock.png"> <span class="date">8 January 2019</span> <a id="topic-link" href="#">Technology</a>
+              </p>
             </div>
-            
+
+            <div class="clear"></div>
+            <img class="article-side-image" src="./images/social-media.png">
+            <div class="side-article">
+              <a class="watch-listen-link" href="#">'How can social media affect mental health?'</a>
+
+              <p><img class="clock" src="images/clock.png"> <span class="date border-right">8 January 2019</span> <a id="topic-link no-border" href="#">Technology</a>
+              </p>
+            </div>
+
+
         </div>
+
     </div>
 </body>
 </html>
