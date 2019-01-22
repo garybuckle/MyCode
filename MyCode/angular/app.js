@@ -1,19 +1,14 @@
-$(Document).ready(function() {
-    var currentStep = 0;
-$("#step1").hide();
-$("#step2").hide();
+var myApp = angular.module('myApp', []);
 
-$("#btnStep1").click(function() { 
-    console.log("Button 1 Clicked");
-$("#step1").show();
-$("#step2").hide();
-});
+myApp.controller('mainController', function($scope){
+    $scope.name ="Gazza";
+    $scope.occupation = "Athlete";
+    console.log($scope);
 
-$("#btnStep2").click(function() { 
-$("#step1").hide();
-$("#step2").show();
-});
-    
-});
+    $scope.getName = function() {
+        return 'Gazza';
+    }
 
+    $scope.getName();
+});
 
