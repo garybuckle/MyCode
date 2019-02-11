@@ -24,6 +24,14 @@
 	    	margin: 10px;
     	}
 
+    	.blueSquare {
+	    	background-color: blue;
+	    	width: 150px;
+	    	height: 150px;
+	    	margin: 10px;
+    	}
+
+
 
     </style>
 
@@ -33,6 +41,10 @@
 
   	<p id="text"> Fade me in!</p>
   	<button id="toggle">Darth Fader</button>
+  	<button id="animate">Darthimate</button>
+
+
+
 
   	<p id="bigger-circle">Make the circle bigger</p>
 
@@ -41,6 +53,7 @@
   		<div class="redsquare"></div>
   		<div class="redsquare"></div>
   		<div id="circle"></div>
+  		<div class="blueSquare"></div>
 
 
 
@@ -68,11 +81,11 @@
 		});
 
 
-	  	$("div").click(function(){
-	  			$(this).fadeOut();
-	  			console.log("You clicked the " + $(this).attr("id"));
+// 	  	$("div").click(function(){
+// 	  			$(this).fadeOut();
+// 	  			console.log("You clicked the " + $(this).attr("id"));
 
-	  	});
+// 	  	});
 
 
 	  	$(".redsquare").hover(function(){
@@ -92,6 +105,12 @@
 		  	 $("#circle").css("height", cheight + "px");
 		  	 console.log(cwidth);
 		  	 console.log(cheight);
+	  	});
+
+
+	  	$(".blueSquare").click(function(){
+		  	console.log("Darthimate");
+		  	$(this).animate({width:"400px"},2000);
 	  	});
 
 
