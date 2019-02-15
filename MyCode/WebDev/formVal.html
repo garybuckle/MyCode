@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <style type="text/css">
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 130%;
+        }
+
+        input {
+            padding: 5px 5px 10px 5px;
+            font-size: 25px;
+            border-radius: 5px;
+            border: 1px solid gray;
+            width: 320px;
+        }
+
+        label {
+            position: relative;
+            top: 12px;
+            width: 200px;
+            float: left;
+        }
+
+        #wrapper {
+            width: 550px;
+            margin: 0 auto;
+        }
+
+        .form-element {
+            margin-bottom: 10px;
+        }
+
+        #submitButton {
+            width: 150px;
+            margin-left: 200px;
+        }
+
+    </style>
+
+
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class ="form-element">
+        <label for="email">EMail</label>
+        <input type="text" name="email" id="mail" placeholder="yourname@yourmail.com">
+    </div>
+
+    <div class ="form-element">
+        <label for="tel">Telephone</label>
+        <input type="text" name="tel" id = "tel" placeholder="0123456789">
+    </div>
+
+    <div class ="form-element">
+            <label for="pw">Password</label>
+            <input type="password" name="pw" id = "pw">
+    </div>
+
+    <div class ="form-element">
+            <label for="confirm-pw">Confirm Password</label>
+            <input type="password" name="confirm-pw" id = "confirm-pw">
+    </div>
+
+    <div class="form-element">
+            <input type="submit" id="submitButton" value = "Sign Up">
+
+    </div>
+
+
+    <script type = "text/javascript">
+        $("#submitButton").click(function(){
+
+                console.log("Submit Button");
+        });
+
+    </script>
+
+</body>
+
+</html>
