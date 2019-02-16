@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Boilerplate</title>
+  </head>
+  <body>
+
+	  <div id="tweetdiv">
+
+
+	  </div>
+  <script>
+  	var tweets = ["Tweet 1","Tweet 2","Tweet 3","Tweet 4"];
+  	var tweetString = "";;
+  	for (var i=0;i<tweets.length;i++) {
+
+  			console.log(tweets[i]);
+  			tweetString = tweetString + "<p>" + tweets[i] + "</p>";
+
+  	};
+
+  	  			document.getElementById("tweetdiv").innerHTML = tweetString;
+
+
+  </script>
+
+
+
+  </body>
+</html>

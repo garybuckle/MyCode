@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ajax</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+  </head>
+  <body>
+<h1>Hello</h1>
+  <p id="jax"></p>
+
+  <script type="text/javascript">
+      console.log("Hallo");
+
+  		$.ajax("info.txt")
+  		.done(function(data) {
+  			console.log(data);
+            $("#jax").html(data);
+
+  		})
+  		.fail(function() {
+	  		console.log("Unable to locate file");
+  		});
+
+
+	  </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <script type="text/javascript" src="js/js3.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <style type="text/css" >
+
+    	#circle {
+			width: 150px;
+			height: 150px;
+			border: 1px solid black;
+			border-radius: 50%;
+			background-color: green;
+			margin: 10px;
+    	}
+
+    	.redsquare {
+	    	background-color: red;
+	    	width: 150px;
+	    	height: 150px;
+	    	margin: 10px;
+    	}
+
+
+    </style>
+
+      </head>
+  <body>
+  	<h1>Hi</h1>
+  		<div class="redsquare"></div>
+  		<div class="redsquare"></div>
+  		<div id="circle"></div>
+
+
+
+  	<script type="text/javascript">
+	  	$("#circle").click(function(){
+	  		console.log("circle clicked")
+	  	});
+
+
+	  	$(".redsquare").click(function(){
+		  	console.log("redsquare clicked");
+	  	});
+
+  	</script>
+  </body>
+</html>
