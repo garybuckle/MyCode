@@ -1,12 +1,11 @@
 <?php
 // $_GET['number'] = 0;
-
-if ($_GET) {
+$number = $_GET['number'];
+if(is_numeric($_GET['number']) && $_GET['number'] > 0 && $_GET['number'] == round($_GET['number'], 0)){
   $i=2;
   $isPrime= true;
-  $number = $_GET['number'];
       while ($i < $number) {
-        if ($number % $i == 0) {
+        if ($_GET['number'] % $i == 0) {
           // echo "Not Prime";
           $isPrime = false;
         }
@@ -22,7 +21,12 @@ if ($_GET) {
         }
   }
 
-  echo $isPrime;
+  else if ($_GET) {
+    echo "<p>Oops!!! maybe you didnt enter a number?</p>";
+}
+
+
+
 ?>
 
 
