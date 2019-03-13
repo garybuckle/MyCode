@@ -22,7 +22,7 @@ if(is_numeric($_GET['number']) && $_GET['number'] > 0 && $_GET['number'] == roun
   }
 
   else if ($_GET) {
-    echo "<p>Oops!!! maybe you didnt enter a number?</p>";
+    echo "<p>Please enter a positive whole number?</p>";
 }
 
 
